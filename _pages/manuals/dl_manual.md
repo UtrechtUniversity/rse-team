@@ -19,6 +19,8 @@ Run the miniconda installation script:
 ```
 ./Miniconda3-latest-Linux-x86_64.sh
 ```
+After this, `logout`, and log back in via SSH for the changes to take effect.
+
 
 ## Step 2: Create a Conda environment
 
