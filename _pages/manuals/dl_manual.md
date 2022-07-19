@@ -75,4 +75,45 @@ To test, run:
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
+## Running Jupyter notebooks
 
+To run Jupyter notebooks in this deep learning environment, install jupyter first:
+
+```
+conda install -c conda-forge jupyter
+```
+Since a headless Ubuntu machine is not equipped with a web browser, you will have to connect to the web interface of the remote server in order to access the notebooks from your local internet browser. To do this, logout and log back in via SSH and use SSH tunneling to connect to the jupyter web interface:
+```
+logout
+```
+```
+ssh -L 8888:localhost:8888 your_server_username@your_server_ip
+```
+Now reactivate your environment and start jupyter:
+```
+source activate my_env
+jupyter notebook
+```
+
+The output will look similar to this:
+
+```
+[C 19:46:22.367 NotebookApp]
+
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8888/?token=Example_Jupyter_Token_3cadb8b8b7005d9a46ca4d6675&tokenExample_Jupyter_Token_3cadb8b8b7005d9a46ca4d6675
+```
+
+The token that is printed here is needed later on to login to jupyter.
+
+In your local internet browser, go to this address:
+```
+http://localhost:8888
+```
+
+Now copy the token that is visible in the ssh session and paste it here.
+
+To install new python libraries in your environment while running the jupyter notebooks, start another ssh session, activate the conda environment and install the required libraries. 
+
+Further reading: [How to install run and connect to jupyter on a remote server](https://www.digitalocean.com/community/tutorials/how-to-install-run-connect-to-jupyter-notebook-on-remote-server)
