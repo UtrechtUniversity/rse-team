@@ -2,7 +2,7 @@
 
 Surf Research Cloud provides powerful Virtual machines that can be configured with 1 or multiple GPU devices to run e.g. Deep learning models. Below are some notes for setting up a Pytorch based and Tensorflow based deep learning environment using miniconda. Research cloud currently provides Ubuntu 18.04 workspaces with CUDA 11 preinstalled (name: "Ubuntu 18.04 with CUDA"). Start the workspace and log in using SSH before running the steps:
 
-## Step 1: Install Miniconda
+## Step 1: Install Miniconda (if necessary)
 
 Download the latest installation shell script:
 ```
