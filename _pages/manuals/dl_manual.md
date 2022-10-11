@@ -41,7 +41,7 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 ```
 To test, start python:
 ```
-python3.7
+python3.9
 ```
 Within python run the following commands, and if all went correct the output should be similar:
 
