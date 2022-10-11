@@ -26,7 +26,7 @@ After this, `logout`, and log back in via SSH for the changes to take effect.
 
 Create a conda environment, where `my_env` in the command below can be changed to a more informative name:
 ```
-conda create --name my_env python=3.7
+conda create --name my_env python=3.9
 ```
 Activate the environment:
 ```
